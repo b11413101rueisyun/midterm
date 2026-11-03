@@ -153,7 +153,7 @@ void Process_Button_Check(uint32_t current_tick) {
                 /* 發送模式切換成功通知至電腦 */
                 char msg[40];
                 int len = sprintf(msg, "\r\n[Switch Mode] Current Mode: %d\r\n", current_mode);
-                HAL_UART_Transmit_IT(&hlpuart1, (uint8_t*)msg, len);
+                HAL_UART_Transmit(&hlpuart1, (uint8_t*)msg, len,100);
 
                 button_is_pressed = 2;             /* 設為 2，防止持續長按時重複觸發切換 */
             }

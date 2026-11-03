@@ -24,11 +24,7 @@
   - *實測結果*：順利將電腦麥克風音量即時映射至 STM32 的 PWM 亮度。
 
 ## 4. 用到的技術：第 3 ~ 7 週勾選表 (同投影片)
-- [x] GPIO 外部中斷 (EXTI 支援按鈕長按)
-- [x] TIM PWM 輸出 (TIM2 三色 LED 亮度控制、TIM3 蜂鳴器音頻)
-- [x] LPUART1 非阻塞式中斷接收 (`HAL_UART_Receive_IT`)
-- [x] Python 序列埠通訊 (`pyserial`) 與音訊串流處理 (`sounddevice`, `numpy`)
-- [x] 非阻塞式時間差計時 (`HAL_GetTick()`)
+<img width="2752" height="1536" alt="功能勾選表" src="https://github.com/user-attachments/assets/c5bea67a-708a-4314-80dc-fe11af68540d" />
 
 ## 5. 腳位表：用到的每支腳位與用途
 - **PC13** = 板載 B1 藍色按鈕（外部中斷輸入，長按 3 秒切換 Mode）
